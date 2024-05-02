@@ -1,0 +1,56 @@
+.container {
+  width: 50vw;
+  height: 80vh;
+  background-color: rgb(196, 163, 120);
+}
+.box {
+  width: 44px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(81, 153, 189);
+  /* animation-name: box;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(1, 0.68, 0.33, 1.29);
+    animation-delay: 2s; */
+
+  /* animation-direction:alternate-reverse reverse; */
+  /* animation-play-state:paused ; */
+  /* animation: circle 2s ease-in-out 5s 3, */
+  animation: circle 2s ease-in-out 5s 3;
+}
+@keyframes box {
+  from {
+    background-color: rgb(35, 164, 26);
+    transform: translateY(12px);
+  }
+  to {
+    background-color: rgb(50, 75, 124);
+    transform: translateX(350px);
+  }
+}
+@keyframes circle {
+  0% {
+    margin-left: 23px;
+    transform: scale(1);
+    background-color: rgb(214, 150, 21);
+  }
+
+  10% {
+    margin-left: 53px;
+    transform: scale(2);
+    background-color: rgb(214, 50, 21);
+  }
+  30% {
+    margin-left: 83px;
+    transform: translateX(123px);
+    transform: scale(3);
+    background-color: rgb(10, 234, 133);
+  }
+  100% {
+    margin-left: 93px;
+    transform: translateX(123px);
+    transform: scale(4);
+    background-color: rgb(236, 11, 198);
+  }
+}
